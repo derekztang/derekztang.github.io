@@ -1,4 +1,18 @@
-p {
-  color: blue;
+h2 {
+  color: #000080;
+  background-color: gray;
+  font-size: 24px;
+  width: 10em;
+  font-family: Garamond;
+}
+
+div {
+  border: 2px solid #467813;
+  border-radius: 5px;
+  background-color: #808000;
+  font color: white;
+  width: 5em;
+  display: inline-block;
+  font-family: arial;
 }
 
