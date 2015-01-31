@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+  <title>Technical blog</title>
+  <meta charset="UTF-8">
+  <link type="text/css" rel="stylesheet" href="../stylesheets/blog-stylesheet.css">
+</head>
+
+<main>
+  <h1>Week 5 Technical blog</h1>
+  <h2>Ruby Classes</h2>
+  <h4>1/25/15</h4>
+
+  <section>
+<p>
+      We will first need to create the class:</br></br>
+      class football</br>
+      end</br></br>
+      This class doesn't do much at the moment. We can define an initialize method that gives certain characteristics to the football that are created. Let's say in our game, football games start at game 1</br></br>
+      class football</br>
+        def initialize</br>
+          @game = 1</br>
+        end</br>
+      end</br></br>
+      The @ marks a variable as an instance variable. This means that it is a variable that belongs to a single instance, as oppose to across an entire class. In this case, football game doesn't interfere with another game, since all games are different instances. It also means that any method inside the class football can access that variable.
+    </p>
+    <p>
+      So what exactly makes a football game? it consists of rules. </br></br>
+      class football</br>
+        def initialize</br>
+          @game= 1</br>
+        end</br>
+        def game_rules</br>
+          scores touchdown</br>
+        end</br>
+      end</br></br>
+      The method game_rules can be used only by people of class Football. Let's create a new football class.</br></br>
+      football.new</br></br>
+      And that's how you create a new football class.
+    </p>
+    <p>
+      Now that we have a class called football, we can keep defining methods within the class to make football games unique. We can have different rules that are accessible to different games.
+    </p>
+
+  </section>
+</main>
+
