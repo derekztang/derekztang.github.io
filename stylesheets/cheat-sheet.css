@@ -1,0 +1,28 @@
+h1 {
+  text-align: center;
+  font-size: 3em;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+pre {
+  display: inline-block;
+  width: 53%;
+  vertical-align: top;
+}
+
+section {
+  padding: 10px;
+}
+
+section:nth-child(odd) {
+  background-color: #E0E0E0;
+}
+
+.definition {
+  display: inline-block;
+  width: 45%;
+}
