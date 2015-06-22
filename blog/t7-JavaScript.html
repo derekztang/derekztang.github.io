@@ -1,37 +1,245 @@
 <!DOCTYPE html>
-<head>
-  <title>Technical blog</title>
-  <meta charset="UTF-8">
-  <link type="text/css" rel="stylesheet" href="../stylesheets/blog-stylesheet.css">
-</head>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Calvin Settachatgul Website">
+    <meta name="Calvin Settachatgul" content="Portfolio">
+    <link rel="icon" href="../imgs/favicon.ico">
 
-<main>
-  <h1>Week 7 Technical blog</h1>
-  <h2>JavaScript vs. Ruby</h2>
-  <h4>2/8/15</h4>
+    <title>Calvin Settachatgul Portfolio</title>
 
-  <section>
-  <p>
-  typeof vs class
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
 
-   To determine what type of value something is (a number, a fixnum, a string, an Object, an array, etc), in JavaScript you write typeof and then then the object; in Ruby, you append .class to the end of the object.
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../js/ie-emulation-modes-warning.js"></script>
 
-   In JavaScript, the triple equals sign helps determine if two objects are the same exact object (having the same typeof and the same value). For example: 3 === 3 returns true In Ruby, that is accomplished through the double equals. (3 == 3 returns true)
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
-   JavaScript has its own double equals, which shouldn’t be confused with Ruby’s: double equals in JavaScript only determines if the values match. For example: "3" == 3 returns true
+    <!-- Custom styles for this template -->
+    <link href="../css/carousel.css" rel="stylesheet">
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Calvin Settachatgul</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li class="active"><a href="index.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">Nav header</li>
+                    <li><a href="#">Separated link</a></li>
+                    <li><a href="#">One more separated link</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+    </div>
+
+
+
+
+
+<div class="container marketing">
+
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">What has been in the works lately? <span class="text-muted">It'll blow your mind.</span></h2>
+
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <p class="lead">This stuff is pretty amazing</p>
+
+<h2>JavaScript</h2>
+    <p>JavaScript and Ruby are both considered Object Oriented Programming languages.  But, the ways they define objects syntactically are different.  </p>
+
+
+    <h2>    Ruby Hashes vs. JavaScript Objects </h2>
+    <p>Ruby Hashes resemble the creation of a JavaScript object.  In Ruby a hash is a a list of key value pairs.  The syntax is for a Hash in ruby is written below:
+
+    </p>
+
+    <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"> my_hash <span style="color: #333333">=</span> { <span style="color: #AA6600">key1</span>: value1, <span style="color: #AA6600">key2</span>: value2}
+</pre></div>
+
+
+    <p>Creation of a object in JavaScript has very similar syntax.  Object definition in JavaScript is a variable defined with keyword var and the variable name.  It is followed by curly brackets that define a pairs of property names and values which can be any number of objects.  The syntax to define a JavaScript object is written below:
+
+
+
+    </p>
+
+    <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">var</span> myJavaScriptObject <span style="color: #333333">=</span> {
+      property1<span style="color: #333333">:</span> value1,
+      property2<span style="color: #333333">:</span> value2
+
+      behavior1<span style="color: #333333">:</span> <span style="color: #008800; font-weight: bold">function</span>() {
+        <span style="color: #008800; font-weight: bold">this</span>.property1 <span style="color: #333333">+=</span><span style="color: #0000DD; font-weight: bold">1</span>;
+      }
+    };
+</pre></div>
+
+
+
+    <p>The javaScript object is very much like a Hash defined in ruby.  Even the name of a function called behavior1 is a property name.  The property behavior1 is a function which will increment the property1 by 1.</p>
+
+    <h2>Ruby classes vs. JavaScript constructor functions</h2>
+    <p>Ruby classes are defined in with a class keyword and it is characterized by attributes and methods and a very special method called initialize.  Even though JavaScript doesn't seem to have a formal class definitions for its object.  It can achieve the creation of objects easily with a constructor method for its objects similar to ruby.</p>
+
+    <p>Ruby classes have several important characteristics which are its properties, behavior and within its behavior a special method when instantiation occurs.  This method is the initialize method.  They syntax for a ruby class is written below:
+
+
   </p>
 
-  <p>
-Objects
+  <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">class</span> <span style="color: #BB0066; font-weight: bold">My_object</span>
 
-Objects (similar to Ruby’s hash), declared as variables, are a way of organizing key/value pairs. For example, var cat = {color: "grey", name: "Spot", age: "12"}; To access the value of an associated key, you can call that on the variable name: cat.name returns "Spot". You can also easily delete a key/value pair by writing delete cat.name. To declare a new key/value pair, write: cat.gender = "male";. This appends this new data point to the end of the Object.
+      <span style="color: #3333BB">@instance_variable1</span>
+      <span style="color: #3333BB">@instance_variable2</span>
+
+      <span style="color: #008800; font-weight: bold">def</span> <span style="color: #0066BB; font-weight: bold">initialize</span>(value1, value2)
+        <span style="color: #3333BB">@instance_variable1</span> <span style="color: #333333">=</span> value1
+        <span style="color: #3333BB">@instance_variable2</span> <span style="color: #333333">=</span> value2
+      <span style="color: #008800; font-weight: bold">end</span>
+
+      <span style="color: #008800; font-weight: bold">def</span> <span style="color: #0066BB; font-weight: bold">method_behavior_1</span>
+        <span style="color: #3333BB">@instance_variable1</span> <span style="color: #333333">+=</span> <span style="color: #0000DD; font-weight: bold">1</span>
+      <span style="color: #008800; font-weight: bold">end</span>
+
+
+    <span style="color: #008800; font-weight: bold">end</span>
+</pre></div>
+
+
+  <p>Within this ruby class called My_object we have the initialize method that takes 2 parameters to set the two instance variables.  We also have 2 instance variables and 2 method which can change the state of the object by incrementing the @instance_varaible1 property.</p>
+
+  <p>Object instantiation occurs in ruby when the Object method new is used to instantiate an instance using the class.  With the following syntax written below:</p>
+
+   <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">my_cool_object <span style="color: #333333">=</span> <span style="color: #003366; font-weight: bold">My_object</span><span style="color: #333333">.</span>new( <span style="color: #0000DD; font-weight: bold">1</span>, <span style="color: #0000DD; font-weight: bold">2</span>)
+</pre></div>
+
+<p>
+    In the line above we are instantiating a new object called my_cool_object with the new method.  new uses the 2 parameters to pass to the initialize method that is the special method we talked about earlier.  During instantiation with new we actually call initialize at the time of the creation of the instance of My_object.
+
   </p>
 
-  <p>
+
+  <p>Even though JavaScript does not have  a formal class definition as Ruby does, it can establish an object with the syntax described earlier with state and behavior and it can use constructor method that is called when the special keyword new is used to create an object.  constructors in JavaScript are the equivalent of ruby's initialize methods.</p>
+
+  <p>A similar JavaScript object can be created that we just created in Ruby
+</p>
+  <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">var</span> myJavaScriptObject <span style="color: #333333">=</span> {
+      property1<span style="color: #333333">:</span> value1,
+      property2<span style="color: #333333">:</span> value2
+    };
+
+    <span style="color: #008800; font-weight: bold">function</span> javaScriptObject(value1, value2){
+      <span style="color: #008800; font-weight: bold">this</span>.property1 <span style="color: #333333">=</span> value1;
+      <span style="color: #008800; font-weight: bold">this</span>.property2 <span style="color: #333333">=</span> value2;
+    };
+</pre></div>
+
+
+
+  <p>We can instantiate new object in JavaScript also with this constructor method that is given a name of a category of objects which could be thought of a class.  The new objects are of the type javaScriptObject.  We call the constructor by writing the line below:
+
+  <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"> <span style="color: #008800; font-weight: bold">var</span> myCoolJavaScriptObject <span style="color: #333333">=</span> <span style="color: #008800; font-weight: bold">new</span> javaScriptObject(<span style="color: #0000DD; font-weight: bold">1</span>, <span style="color: #0000DD; font-weight: bold">2</span>);
+
+  the above line will achieve a similar result to<span style="color: #333333">:</span>
+
+  <span style="color: #008800; font-weight: bold">var</span> myCoolJavaScriptObject <span style="color: #333333">=</span> {
+    property1<span style="color: #333333">:</span> <span style="color: #0000DD; font-weight: bold">1</span>,
+    property2<span style="color: #333333">:</span> <span style="color: #0000DD; font-weight: bold">2</span>
+  };
+</pre></div>
+
+
 
   </p>
+    <h2>Looping in Ruby vs. Looping in JavaScript</h2>
+    <p>There are some important looping differences between Ruby and Java.  Ruby uses .each to create iterator methods.  Using each greatly reduces syntax.  for loops are used to iterate over arrays in JavaScript.  </p>
 
-  </section>
+    <p>Below is an example of a ruby .each syntax that iterates over an array
 
-</main>
+     <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">my_array <span style="color: #333333">=</span> <span style="color: #333333">[</span><span style="color: #0000DD; font-weight: bold">1</span>,<span style="color: #0000DD; font-weight: bold">2</span>,<span style="color: #0000DD; font-weight: bold">3</span>, <span style="color: #0000DD; font-weight: bold">4</span><span style="color: #333333">]</span>
 
+my_array<span style="color: #333333">.</span>each { <span style="color: #333333">|</span>element_of_array<span style="color: #333333">|</span> <span style="color: #007020">puts</span> element_of_array}
+</pre></div>
+
+<p>
+    Below is an example of a JavaScript iteration over an array using a for loop.
+</p>
+    <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">var</span> my_array <span style="color: #333333">=</span> [<span style="color: #0000DD; font-weight: bold">1</span>, <span style="color: #0000DD; font-weight: bold">2</span>, <span style="color: #0000DD; font-weight: bold">3</span>, <span style="color: #0000DD; font-weight: bold">4</span>];
+
+<span style="color: #008800; font-weight: bold">for</span>(<span style="color: #008800; font-weight: bold">var</span> index <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>; index <span style="color: #333333">&lt;</span> my_array.length ; index <span style="color: #333333">+=</span> <span style="color: #0000DD; font-weight: bold">1</span>)
+      console.log(my_array[index]);
+</pre></div>
+
+
+    </p>
+
+
+
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2015 Calvin Settachatgul &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="../js/holder.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

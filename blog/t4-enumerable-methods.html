@@ -1,30 +1,216 @@
 <!DOCTYPE html>
-<head>
-  <title>Technical blog</title>
-  <meta charset="UTF-8">
-  <link type="text/css" rel="stylesheet" href="../stylesheets/blog-stylesheet.css">
-</head>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Calvin Settachatgul Website">
+    <meta name="Calvin Settachatgul" content="Portfolio">
+    <link rel="icon" href="../imgs/favicon.ico">
 
-<main>
-  <h1>Week 4 Technical blog</h1>
-  <h2>Ruby: Enumerable#map</h2>
-  <h4>1/18/15</h4>
+    <title>Calvin Settachatgul Portfolio</title>
 
-  <section>
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="../css/carousel.css" rel="stylesheet">
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Calvin Settachatgul</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="#about">About</a></li>
+                <li><a href="index.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">Nav header</li>
+                    <li><a href="#">Separated link</a></li>
+                    <li><a href="#">One more separated link</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+    </div>
+
+
+
+
+<div class="container marketing">
+
+
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">What has been in the works lately? <span class="text-muted">It'll blow your mind.</span></h2>
+
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <p class="lead">This stuff is pretty amazing</p>
+
+<h2>Enumerable method map 02/25/15</h2>
+
+    <p>I'd like to tell you a little bit about map, a method that can apply to a list type structure that can be iterated over called an Enumerator.  From the Ruby docs we have this:</p>
+
+
     <p>
-      Hashes and arrays are great tools for organizing our data, but what's far more powerful is the ability to manipulate that data. This can of course be done with the #each method, but Ruby also includes a module called Enumerable that contains a wide variety of other useful methods.
-    </p>
+    From Ruby docs:  Enumerable</p>
     <p>
-      One widely used method is the #map method. #map returns a new array that contains the result of running the block once for every element.
-    </p>
+    The Enumerable mixin provides collection classes with several traversal and searching methods, and with the ability to sort. The class must provide a method each, which yields successive members of the collection. If Enumerable#max, #min, or #sort is used, the objects in the collection must also implement a meaningful <=> operator, as these methods rely on an ordering between members of the collection such as arrays, ranges, hashes, sets.</p>
+
     <p>
-      [1, 2, 3].map { |n| n * n } #=> [1, 4, 9]
-    </p>
+
+    map { |item| block } → new_ary click to toggle source
+    map → Enumerator
+    Invokes the given block once for each element of self.
+
+    Creates a new array containing the values returned by the block.
+
+    See also Enumerable#collect.
+
+    If no block is given, an Enumerator is returned instead.</p>
+
+    <p>I know the above to paragraphs can be a bit confusing because it is written in a very abstract way.</p>
+
     <p>
-      This differs from #each in that it allows us to create a new array as opposed to simply doing something with the data contained in the original array.
+      What the above paragraph is saying an Enumerable methods include ways to move across a data structure.  These data structures or collections are part of the collection classification of objects including Hashes, Arrays, Lists.
+
     </p>
 
 
-  </section>
-</main>
+    <p>
+      The paragraph also makes reference to a method to compare the elements of the  data object.  This comparison method is called the combined comparison operator  is written as <=>.  The comparison operator allows the possibility of having other methods such as sort, min, max.  Sorting will sort each element by comparing them in someway and putting them in a specific order.  Min will return the minimum of the collection.  Max will return the maximum of the collection.
+    </p>
 
+    <p>
+      The map method is just a method that performs a specific action on each element of the collection.  The argument for map is a code block.  Inside the block you can specify what is done to each element of the collection and then a new collection is returned with the block applied to each element.
+    </p>
+
+    <h2>Examples of using Map</h2>
+
+
+    <p>Below we have an example of the use of map on a collection</p>
+
+    <h2>Arithmetic Operations on Integers</h2>
+
+<!--     numbers_array = *(1..10)
+
+    array_add_10 = numbers_array.map { |number| number + 10}
+
+    array_divide_10 = numbers_array.map { |number| number / 10.0}
+
+    array_exponent_10 = numbers_array.map { |number| number ** 10}
+
+    p array_add_10
+    p array_divide_10
+    p array_exponent_10 -->
+
+   <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">    numbers_array = *(<span style="color: #0000DD; font-weight: bold">1</span>..<span style="color: #0000DD; font-weight: bold">10</span>)
+
+    array_add_10 = numbers_array.map { |number| number + <span style="color: #0000DD; font-weight: bold">10</span>}
+
+    array_divide_10 = numbers_array.map { |number| number / <span style="color: #0000DD; font-weight: bold">10</span>.<span style="color: #0000DD; font-weight: bold">0</span>}
+
+    array_exponent_10 = numbers_array.map { |number| number ** <span style="color: #0000DD; font-weight: bold">10</span>}
+
+    <span style="color: #003388">p</span> array_add_10
+    <span style="color: #003388">p</span> array_divide_10
+    <span style="color: #003388">p</span> array_exponent_10
+</pre></div>
+
+
+
+
+    <p>The code snippet above shows the map fuction working on the block and below is the ouput</p>
+
+    <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">[11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+[0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
+[1, 1024, 59049, 1048576, 9765625, 60466176, 282475249, 1073741824, 3486784401, 10000000000]
+</pre></div>
+
+
+    <h2>class method on Objects</h2>
+
+    <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">    object_array = [<span style="color: #dd2200; background-color: #fff0f0">&quot;apple&quot;</span>, <span style="color: #0000DD; font-weight: bold">1</span> , [<span style="color: #0000DD; font-weight: bold">1</span>,<span style="color: #0000DD; font-weight: bold">2</span>,<span style="color: #0000DD; font-weight: bold">3</span>]]
+
+    object_class_array = object_array.map { |element| element.class }
+
+    <span style="color: #003388">p</span> object_class_array
+</pre></div>
+
+
+
+    <p>The code snippet above shows the map function working on the block and the ouptut is shown below:</p>
+
+    <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">[String, Fixnum, Array]
+</pre></div>
+
+
+
+
+    <p>These are both great examples of how map can take a block and then change each element of the collection based methods that are specified inside the block</p>
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2015 Calvin Settachatgul &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="../js/holder.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
