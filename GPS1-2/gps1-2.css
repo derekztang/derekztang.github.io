@@ -1,0 +1,25 @@
+
+
+h1 {
+  padding: 2% 0% 0% 1%;
+  font-size: 2em;
+  height: 3em;
+  background: green;
+  color: white;
+  font-family: sans-serif;
+
+}
+
+h2 {
+  font-size: 2em;
+  font-family: sans-serif;
+}
+
+.header {
+
+}
+
+.content {
+  font-size: 1.75em;
+
+}
