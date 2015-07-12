@@ -1,0 +1,29 @@
+<div class="content-wrap">
+  <aside ng-include="'aside.html'"></aside>
+  <section class="white-box-2" id="c11">
+    <h2>Aliases</h2>
+    <h3>Workflow Part III</h3>
+    <h4><em>Apr 3, 2015</em></h4>
+    <p>
+      If you've read my previous two workflow posts (<a ui-sref="c9-completions">Completions</a> and <a ui-sref="c10-snippets">Snippets</a>), you've noticed a recurring theme. There are things we repeat needlessly when programming. One of the cardinal sins in programming is repetition. A central tenant of this craft is writing D.R.Y. (don't repeat yourself) code. For this post, let's focus on the terminal. If you use the terminal a lot, you've more than likely typed things like <code>cd ..</code> a million times. You probably have some directories you navigate to a lot. Fortunately, the terminal supports <strong>aliases</strong>. Aliases are shortened versions of terminal inputs. For example, suppose I want to navigate three folders down from my home directory.
+    </p>
+    <img src="blog/imgs/alias1.png">
+    <p>
+      I go to this directory on a daily basis. It's laborious to type all that out, even with auto-complete. It doesn't make much sense to set that location as the default working directory either, because I often go to other directories. I'll set up an alias!
+    </p>
+    <img src="blog/imgs/alias2.png">
+    <p>
+      Typing <code>sip</code> is equivalent to <code>pushd ~/Desktop/Projects/HappyHourHunter</code>. With only three keystrokes I can navigate from anywhere to HappyHourHunter! To create an alias, you'll need to go to your home directory and open a (hidden) file <code>.bash_profile</code>. Pick your favorite text editor and edit it. I use Vim.
+    </p>
+    <img src="blog/imgs/alias3.png">
+    <p>
+      Scroll down to where is says <code># Useful aliases</code>. This is where you can assign your alias.
+    </p>
+    <img src="blog/imgs/alias4.png">
+    <p>
+      You can see my <code>sip</code> alias, among others that expedite navigation. I have <code>gimp</code> in case I want to open an image with Gimp instead of the default image editor. I even have an alias, <code>al</code>, for creating new aliases! They've greatly streamlined the use of the terminal. Over time I've learned to love the terminal.
+    </p>
+    <p>These workflow techniques are all a part of programming philosophy. It's all about abstraction and eliminating repetition. For my next post I'll depart from the D.R.Y. mantra and show you how to make your Sublime Text look pretty!</p>
+  </section>
+</div>
+

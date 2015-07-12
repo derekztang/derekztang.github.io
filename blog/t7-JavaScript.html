@@ -1,245 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="Derek Tang Website">
-    <meta name="Derek Tang" content="Portfolio">
-    <link rel="icon" href="../imgs/favicon.ico">
-
-    <title>Derek Tang Portfolio</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="../js/ie-emulation-modes-warning.js"></script>
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-    <!-- Custom styles for this template -->
-    <link href="../css/carousel.css" rel="stylesheet">
-  </head>
-<!-- NAVBAR
-================================================== -->
-  <body>
-    <div class="navbar-wrapper">
-      <div class="container">
-
-        <nav class="navbar navbar-inverse navbar-static-top">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#">Derek Tang</a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li class="active"><a href="index.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                  <ul class="dropdown-menu" role="menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li class="divider"></li>
-                    <li class="dropdown-header">Nav header</li>
-                    <li><a href="#">Separated link</a></li>
-                    <li><a href="#">One more separated link</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-
-      </div>
-    </div>
-
-
-
-
-
-<div class="container marketing">
-
-
-      <!-- START THE FEATURETTES -->
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">What has been in the works lately? <span class="text-muted">It'll blow your mind.</span></h2>
-
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-        </div>
-      </div>
-
-      <p class="lead">This stuff is pretty amazing</p>
-
-<h2>JavaScript</h2>
-    <p>JavaScript and Ruby are both considered Object Oriented Programming languages.  But, the ways they define objects syntactically are different.  </p>
-
-
-    <h2>    Ruby Hashes vs. JavaScript Objects </h2>
-    <p>Ruby Hashes resemble the creation of a JavaScript object.  In Ruby a hash is a a list of key value pairs.  The syntax is for a Hash in ruby is written below:
-
+<div class="content-wrap">
+  <aside ng-include="'aside.html'"></aside>
+  <section class="white-box-2" id="t7">
+    <h2>Ruby vs. JavaScript Loops</h2>
+    <h3>What Are You Getting Loopy For?</h3>
+    <h4><em>Mar 19, 2015</em></h4>
+    <p>
+      Ruby is a very high-level language, meaning you can express a lot with only a few lines of code. This is merited by its myriad of built in functionality. The power in its methods make Ruby programs petite and elegant, much like their brilliant gemstone namesake. Rarely do other languages beat the beauty and brevity of Ruby. However, this level of refinement comes with a performance cost. Ruby programs are slower to execute and they tend to scale poorly. JavaScript is a faster language that comes <em>close</em> to Ruby's ritzy methods. JavaScript is also far more widely used, <strong>so it's valuable to know.</strong>
     </p>
-
-    <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"> my_hash <span style="color: #333333">=</span> { <span style="color: #AA6600">key1</span>: value1, <span style="color: #AA6600">key2</span>: value2}
-</pre></div>
-
-
-    <p>Creation of a object in JavaScript has very similar syntax.  Object definition in JavaScript is a variable defined with keyword var and the variable name.  It is followed by curly brackets that define a pairs of property names and values which can be any number of objects.  The syntax to define a JavaScript object is written below:
-
-
-
+    <p>
+      Although JavaScript doesn't match Ruby's highly numerous, reliable <code>Enumerable</code> methods, there are things that it does better than Ruby (besides speed). Essentially every one of Ruby's <code>Enumerable</code> methods can be emulated in JavaScript using a <code>for</code> loop. Shown below is an example of a <code>for</code> loop being used.
     </p>
-
-    <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">var</span> myJavaScriptObject <span style="color: #333333">=</span> {
-      property1<span style="color: #333333">:</span> value1,
-      property2<span style="color: #333333">:</span> value2
-
-      behavior1<span style="color: #333333">:</span> <span style="color: #008800; font-weight: bold">function</span>() {
-        <span style="color: #008800; font-weight: bold">this</span>.property1 <span style="color: #333333">+=</span><span style="color: #0000DD; font-weight: bold">1</span>;
-      }
-    };
-</pre></div>
-
-
-
-    <p>The javaScript object is very much like a Hash defined in ruby.  Even the name of a function called behavior1 is a property name.  The property behavior1 is a function which will increment the property1 by 1.</p>
-
-    <h2>Ruby classes vs. JavaScript constructor functions</h2>
-    <p>Ruby classes are defined in with a class keyword and it is characterized by attributes and methods and a very special method called initialize.  Even though JavaScript doesn't seem to have a formal class definitions for its object.  It can achieve the creation of objects easily with a constructor method for its objects similar to ruby.</p>
-
-    <p>Ruby classes have several important characteristics which are its properties, behavior and within its behavior a special method when instantiation occurs.  This method is the initialize method.  They syntax for a ruby class is written below:
-
-
-  </p>
-
-  <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">class</span> <span style="color: #BB0066; font-weight: bold">My_object</span>
-
-      <span style="color: #3333BB">@instance_variable1</span>
-      <span style="color: #3333BB">@instance_variable2</span>
-
-      <span style="color: #008800; font-weight: bold">def</span> <span style="color: #0066BB; font-weight: bold">initialize</span>(value1, value2)
-        <span style="color: #3333BB">@instance_variable1</span> <span style="color: #333333">=</span> value1
-        <span style="color: #3333BB">@instance_variable2</span> <span style="color: #333333">=</span> value2
-      <span style="color: #008800; font-weight: bold">end</span>
-
-      <span style="color: #008800; font-weight: bold">def</span> <span style="color: #0066BB; font-weight: bold">method_behavior_1</span>
-        <span style="color: #3333BB">@instance_variable1</span> <span style="color: #333333">+=</span> <span style="color: #0000DD; font-weight: bold">1</span>
-      <span style="color: #008800; font-weight: bold">end</span>
-
-
-    <span style="color: #008800; font-weight: bold">end</span>
-</pre></div>
-
-
-  <p>Within this ruby class called My_object we have the initialize method that takes 2 parameters to set the two instance variables.  We also have 2 instance variables and 2 method which can change the state of the object by incrementing the @instance_varaible1 property.</p>
-
-  <p>Object instantiation occurs in ruby when the Object method new is used to instantiate an instance using the class.  With the following syntax written below:</p>
-
-   <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">my_cool_object <span style="color: #333333">=</span> <span style="color: #003366; font-weight: bold">My_object</span><span style="color: #333333">.</span>new( <span style="color: #0000DD; font-weight: bold">1</span>, <span style="color: #0000DD; font-weight: bold">2</span>)
-</pre></div>
-
-<p>
-    In the line above we are instantiating a new object called my_cool_object with the new method.  new uses the 2 parameters to pass to the initialize method that is the special method we talked about earlier.  During instantiation with new we actually call initialize at the time of the creation of the instance of My_object.
-
-  </p>
-
-
-  <p>Even though JavaScript does not have  a formal class definition as Ruby does, it can establish an object with the syntax described earlier with state and behavior and it can use constructor method that is called when the special keyword new is used to create an object.  constructors in JavaScript are the equivalent of ruby's initialize methods.</p>
-
-  <p>A similar JavaScript object can be created that we just created in Ruby
-</p>
-  <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">var</span> myJavaScriptObject <span style="color: #333333">=</span> {
-      property1<span style="color: #333333">:</span> value1,
-      property2<span style="color: #333333">:</span> value2
-    };
-
-    <span style="color: #008800; font-weight: bold">function</span> javaScriptObject(value1, value2){
-      <span style="color: #008800; font-weight: bold">this</span>.property1 <span style="color: #333333">=</span> value1;
-      <span style="color: #008800; font-weight: bold">this</span>.property2 <span style="color: #333333">=</span> value2;
-    };
-</pre></div>
-
-
-
-  <p>We can instantiate new object in JavaScript also with this constructor method that is given a name of a category of objects which could be thought of a class.  The new objects are of the type javaScriptObject.  We call the constructor by writing the line below:
-
-  <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"> <span style="color: #008800; font-weight: bold">var</span> myCoolJavaScriptObject <span style="color: #333333">=</span> <span style="color: #008800; font-weight: bold">new</span> javaScriptObject(<span style="color: #0000DD; font-weight: bold">1</span>, <span style="color: #0000DD; font-weight: bold">2</span>);
-
-  the above line will achieve a similar result to<span style="color: #333333">:</span>
-
-  <span style="color: #008800; font-weight: bold">var</span> myCoolJavaScriptObject <span style="color: #333333">=</span> {
-    property1<span style="color: #333333">:</span> <span style="color: #0000DD; font-weight: bold">1</span>,
-    property2<span style="color: #333333">:</span> <span style="color: #0000DD; font-weight: bold">2</span>
-  };
-</pre></div>
-
-
-
-  </p>
-    <h2>Looping in Ruby vs. Looping in JavaScript</h2>
-    <p>There are some important looping differences between Ruby and Java.  Ruby uses .each to create iterator methods.  Using each greatly reduces syntax.  for loops are used to iterate over arrays in JavaScript.  </p>
-
-    <p>Below is an example of a ruby .each syntax that iterates over an array
-
-     <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">my_array <span style="color: #333333">=</span> <span style="color: #333333">[</span><span style="color: #0000DD; font-weight: bold">1</span>,<span style="color: #0000DD; font-weight: bold">2</span>,<span style="color: #0000DD; font-weight: bold">3</span>, <span style="color: #0000DD; font-weight: bold">4</span><span style="color: #333333">]</span>
-
-my_array<span style="color: #333333">.</span>each { <span style="color: #333333">|</span>element_of_array<span style="color: #333333">|</span> <span style="color: #007020">puts</span> element_of_array}
-</pre></div>
-
-<p>
-    Below is an example of a JavaScript iteration over an array using a for loop.
-</p>
-    <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">var</span> my_array <span style="color: #333333">=</span> [<span style="color: #0000DD; font-weight: bold">1</span>, <span style="color: #0000DD; font-weight: bold">2</span>, <span style="color: #0000DD; font-weight: bold">3</span>, <span style="color: #0000DD; font-weight: bold">4</span>];
-
-<span style="color: #008800; font-weight: bold">for</span>(<span style="color: #008800; font-weight: bold">var</span> index <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>; index <span style="color: #333333">&lt;</span> my_array.length ; index <span style="color: #333333">+=</span> <span style="color: #0000DD; font-weight: bold">1</span>)
-      console.log(my_array[index]);
-</pre></div>
-
-
+    <img src="blog/imgs/JSfor4.jpg">
+    <h6>Using a <code>for</code> loop to calculate the sum of all integers from 1 to 100.</h6>
+    <p>
+      In the parentheses after <code>for</code> is where the magic happens. The first expression establishes a counter variable, <code>i</code>, by convention. The second expression decides when the loop is over: when it evaluates to <code>false</code>. The third expression determines <em>how</em> we're counting, i.e. it doesn't necessarily count up by one after each iteration. These <code>for</code> loops are ubiquitous in JavaScript programs! Ruby has <code>for</code> loops as well, but they are less modular. They are typically defined by a range and can only increment by one. Let's compare them by using each to write a program to insert commas into an integer.
     </p>
-
-
-
-
-      <!-- FOOTER -->
-      <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2015 Derek Tang &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-      </footer>
-
-    </div><!-- /.container -->
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
-    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
-    <script src="../js/holder.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../js/ie10-viewport-bug-workaround.js"></script>
-  </body>
-</html>
+    <img src="blog/imgs/JSfor3.jpg">
+    <h6>Can we write a function that takes a number and returns a string with commas properly inserted into the number?</h6>
+    <p>
+      JavaScript has no built-in method to directly insert characters into a string at a certain index. However, it can be done with an <em>array</em> of characters. Therefore we can call <code>String()</code> followed by <code>split()</code> to convert the number to an array. We'll then use a <code>for</code> loop to repeat the <code>splice()</code> method.
+    </p>
+    <img src="blog/imgs/JSfor2.png">
+    <h6>A JavaScript<code>for</code> loop in action.</h6>
+    <p>
+      After converting back to a string, it's complete! But how would we do the same thing in Ruby? As I mentioned before, Ruby <code>for</code> loops must increment by one, so it will be less straightforward.
+    </p>
+    <img src="blog/imgs/JSfor1.jpg">
+    <h6>The same net effect using Ruby.</h6>
+    <p>
+      Although Ruby allows us to operate directly on a string, the <code>for</code> loop is a bit... clumsier. We had to do a calculation to stop the loop in the right place. We also had to do a calculation on <code>i</code> inside the body of the loop. The pattern and intent in the JavaScript example is much clearer. Much more coercion is needed to use a Ruby <code>for</code> loop for this challenge.
+    </p>
+    <p>
+      So even though Ruby has the most inherent functionality, it doesn't have the most elegant answer to <em>everything</em>. The fundamentals are best handled by simpler languages.
+    </p>
+  </section>
+</div>

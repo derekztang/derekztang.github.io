@@ -1,0 +1,41 @@
+<h2>Other Posts</h2>
+<h4 ng-click="aside.tab = 's'">
+  <div class='inline' ng-class="{rotate:aside.tab === 's'}">
+    <i class="fa fa-chevron-right"></i>
+  </div> Science
+</h4>
+<div ng-show="aside.tab === 's'">
+  <h6><a ui-sref="s3-chemophobia">Chemophobia</a></h6>
+  <h6><a ui-sref="s2-prop-65">California Prop. 65</a></h6>
+  <h6><a ui-sref="s1-teixobactin">Teixobactin</a></h6>
+</div>
+<h4 ng-click="aside.tab = 't'">
+  <div class='inline' ng-class="{rotate:aside.tab === 't'}">
+    <i class="fa fa-chevron-right"></i>
+  </div> Programming
+</h4>
+<div ng-show="aside.tab === 't'">
+  <h6><a ui-sref="t8-tech">Recursive Functions</a></h6>
+  <h6><a ui-sref="t7-javascript">Ruby vs. JavaScript Loops</a></h6>
+  <h6><a ui-sref="t6-array-proc">#to_proc Method</a></h6>
+  <h6><a ui-sref="t5-ruby-classes">Enumerators</a></h6>
+  <h6><a ui-sref="t4-enumerable-methods">Enumerable Methods</a></h6>
+  <h6><a ui-sref="t3-arrays-hashes">Ruby Data Structures</a></h6>
+  <h6><a ui-sref="t2-css-design">Displaying Content in HTML/CSS</a></h6>
+  <h6><a ui-sref="t1-git-blog">Git and Github</a></h6>
+</div>
+<h4 ng-click="aside.tab = 'c'">
+  <div class='inline' ng-class="{rotate:aside.tab === 'c'}">
+    <i class="fa fa-chevron-right"></i>
+  </div> Tech Culture
+</h4>
+<div ng-show="aside.tab === 'c'">
+  <h6><a ui-sref="c12-feminism">Feminism in Tech</a></h6>
+  <h6><a ui-sref="c11-aliases">Aliases</a></h6>
+  <h6><a ui-sref="c10-snippets">Snippets</a></h6>
+  <h6><a ui-sref="c9-completions">Completions</a></h6>
+  <h6><a ui-sref="c6-stereotype-threat">Stereotype Threat</a></h6>
+  <h6><a ui-sref="c5-feedback">Pairing and Feedback</a></h6>
+  <h6><a ui-sref="c4-tech-issues">Lack of Diversity</a></h6>
+  <h6><a ui-sref="c3-thinking-style">Growth vs. Fixed Mindset</a></h6>
+</div>

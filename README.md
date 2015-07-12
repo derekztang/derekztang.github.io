@@ -1,4 +1,2 @@
-derekztang.github.io
-====================
-
-My DBC Phase 0 Page site
+# acarl005.github.io
+for DBC phase 0

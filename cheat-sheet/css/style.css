@@ -1,0 +1,50 @@
+.alert-info {
+  background-color: #337ab7;
+  color: #C0C4C4;
+}
+
+.alert-info a {
+  color: white;
+}
+
+.alert-info p {
+  margin-bottom: 0;
+}
+
+.jumbotron {
+  background: linear-gradient(to bottom right, #566176, #E2E9F1);
+}
+
+.jumbotron > * {
+  color: black;
+}
+
+.cover {
+  background-color: white;
+  opacity: 0.4;
+}
+
+.nav-pills {
+  margin-bottom: 30px;
+}
+
+.navbar-default {
+  margin-bottom: 0;
+}
+
+.navbar-default .navbar-text {
+  color: #BBBBBB;
+}
+
+.navbar-default.navbar-static-bottom {
+  background: linear-gradient(to bottom, #FAFAFA, #D0D0D0);
+  border-top: 1px solid #D0D0D0;
+}
+
+.navbar-default.navbar-static-top {
+  margin-bottom: 30px;
+}
+
+.panel {
+  margin-bottom: 80px;
+}

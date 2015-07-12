@@ -1,0 +1,77 @@
+body {
+  font-family: 'varela round';
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.nav {
+  font-family: avenir;
+  font-weight: lighter
+}
+
+#trash {
+  background: white;
+  border: none;
+  padding: 0;
+  color: #00CCFF;
+}
+
+#trash:hover {
+  color: #000;
+}
+
+.btn {
+  margin-right: 10px;
+}
+
+.form-inline .form-group {
+  padding-right: 10px;
+}
+
+td {
+  overflow: scroll;
+  white-space: nowrap;
+  height: 40px;
+}
+
+.tname {
+  max-width: 140px;
+}
+
+.ttype {
+  max-width: 50px;
+}
+
+.tprice {
+  max-width: 35px;
+}
+
+div[class*=" col-"] {
+  padding: 0;
+}
+
+footer {
+  background-color: #43434C;
+  background: linear-gradient(to bottom, #444, #14141F);
+  margin-top: 100px;
+  padding: 20px;
+  color: white;
+}
+
+.panel {
+  margin-bottom: 0;
+}
+
+.navbar-brand a {
+  color: #ccc;
+}
+
+@media (max-width: 349px) {
+
+  .btn {
+    margin-right: 2px;
+  }
+
+}

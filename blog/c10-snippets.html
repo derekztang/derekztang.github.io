@@ -1,0 +1,33 @@
+<div class="content-wrap">
+  <aside ng-include="'aside.html'"></aside>
+  <section class="white-box-2" id="c10">
+    <h2>Snippets</h2>
+    <h3>Workflow Part II</h3>
+    <h4><em>Apr 2, 2015</em></h4>
+    <p>
+      Every language has its expressions you type <em>ad nauseam</em>. For example, in JavaScript you type a lot of <code>console.log()</code>s and <code>for</code> loops. Wouldn't it be splendid if there was a simple key combination to splice those into your code? That's easy to do with snippets! Any number of lines of code are at the whim of a few keystrokes! <strong>Behold</strong> this gif animation.
+    </p>
+    <img src="blog/imgs/snip1.gif">
+    <h6>Snippet for <code>console.log()</code>.</h6>
+    <p>
+      All I had to do was press alt + c. What if we need an array of integers up to 100? I have one for <code>for</code> loops too, alt + f. Check it out!
+    </p>
+    <img src="blog/imgs/snip2.gif">
+    <h6>Snippet for <code>for</code> loops.</h6>
+    <p>
+      You get the point. Now I'll show you how to make your own. If you're using Sublime Text, just go to Preferences > Key Bindings – User.
+    </p>
+    <img src="blog/imgs/snip3.png">
+    <p>
+      This will open the Sublime keymap JSON file. This has an array of objects. Simply add an object for the snippet you want.
+    </p>
+    <img src="blog/imgs/snip4.png">
+    <p>
+      The <code>contents</code> property has the actual code you want to insert. You'll notice a couple of special variables in there. <code>$SELECTION</code> will place the selected text in its place. <code>${0}</code> is where the cursor will end up.
+    </p>
+    <p>
+      These snippets will save you a few seconds each time you use them. It adds up quickly! Combining this technique with <a ui-sref="c9-completions">Completions</a> and other workflow strategies can save you a few days each year! Stay posted for my next workflow trick: aliases.
+    </p>
+  </section>
+</div>
+

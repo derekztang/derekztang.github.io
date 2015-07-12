@@ -1,0 +1,42 @@
+<div class="content-wrap">
+  <aside ng-include="'aside.html'"></aside>
+  <section class="white-box-2" id="t6">
+    <h2>The Ruby #to_proc Method</h2>
+    <h3>Refactoring Blocks</h3>
+    <h4><em>Mar 11, 2015</em></h4>
+    <img src="blog/imgs/proc1.png" />
+    <p>
+      In <a ui-sref="t4-enumerable-methods">my post</a> about <code>Enumerable</code> methods, I discussed methods like <code>Array#map</code>, which yields each element of an array to a block and stores the output in a new array. It transpires that in some cases, it isn't necessary to type out a whole block for this method, among others. Shown above is one such example which utilizes the <code>&</code> operator on a symbol <code>:upcase</code>. <strong>What's going on here?</strong> The <code>&</code> operator is generally used to call a <em>proc</em>. Procs are essentially blocks, but differ in that they are objects. Despite almost everything in Ruby being an object, blocks are not. They cannot be saved into a variable, only executed. But a proc <em>is</em> an object, and therefore can be stored in a variable. One can be initialized with <code>Proc.new</code>, and the <code>&</code> is used to call a proc stored in a variable name.
+    </p>
+    <img src="blog/imgs/proc1a.png">
+    <h6>Creating a proc and calling it multiple times with <code>&</code>.</h6>
+    <p>
+      This can eliminate a lot of redundancy! Notice that a proc is saved in any plain old variable name, not a symbol. <em>So what does this have to do with symbols?</em> When <code>&</code> is given an object that isn't a proc, like a symbol, it doesn't know what to do with it. So it attempts to convert it to one in order to make sense of it. The conversion is attempted by calling the <code>Symbol#to_proc</code> method. So <code>&:upcase</code> <em>really</em> means <code>:upcase.to_proc</code>.
+    </p>
+    <img src="blog/imgs/proc2.png">
+    <h6>The definition of the method and an example of calling it.</h6>
+    <p>
+      Shown above is the definition of the <code>Symbol#to_proc</code> method. Now we can see what's under the hood when we use this shortcut! Another example is the <code>#inject</code> method.
+    </p>
+    <img src="blog/imgs/proc3.png">
+    <h6>Its use on the inject method.</h6>
+    <p>
+      This example yields two arguments to the block. The first receives the message with the method, in this case <code>:+</code>, and the second is passed as the argument for <code>#+</code>. This shortcut is galvanizing and I use it whenever possible! But are Rubyists missing out on something potentially more powerful? What if, for example, you wanted to use a method like <code>#include?</code> or <code>is_a?</code> which require an argument?
+    </p>
+    <img src="blog/imgs/proc4.png">
+    <h6>I love this shortcut! But why can't I put an argument in?</h6>
+    <p>
+      Sadly this is not possible at the time of writing. <strong>But can we make it possible?</strong> We would like to pass an object in to be used as an argument, so <code>Symbol#to_proc</code> can't help us. But what about <code>Array#to_proc</code>? Certainly we can place objects in conjunction with our symbol in an array! But <code>Array#to_proc</code> doesn't exist... yet. Let's do a little bit of monkey-patching!
+    </p>
+    <img src="blog/imgs/proc5.png">
+    <h6>Defining a conversion for arrays to procs.</h6>
+    <p>
+      Voila! We've defined <code>Array#to_proc</code> wherein the method is placed at index 0 and the rest of the array is a variable number of arguments! Now we can do things like this:
+    </p>
+    <img src="blog/imgs/proc6.png">
+    <h6>Some examples of <code>Array#to_proc</code> in action.</h6>
+    <p>
+      We've refactored even further. Have I saved myself any time? <strong>Probably not.</strong> But it is a nice exercise in programming and getting intimate with Ruby.
+    </p>
+  </section>
+</div>

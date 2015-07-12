@@ -1,127 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="Derek Tang Website">
-    <meta name="Derek Tang" content="Portfolio">
-    <link rel="icon" href="../imgs/favicon.ico">
+<head>
+  <title>Andrew's Blog</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans|Raleway:200' rel='stylesheet' type='text/css'>
+</head>
 
-    <title>Derek Tang Portfolio</title>
+<body>
+  <div class="backed"></div>
+  <div class="content-wrap">
+    <section class="white-box-2" id="c8">
+      <h2>Conflict</h1>
+      <h3>How to (Attempt to) Resolve It</h2>
+      <h4><em>Mar 27, 2015</em></h4>
+      <p>
+        Pair programming has done so much to enrich my experience at Dev Bootcamp. I've bonded with my colleagues, learned from their experience and perspectives, and grown into a more empathetic programmer. But pair programming has an inevitable experience: conflict. Although we try to be accommodating and open-minded to avoid conflict, it's an inexorable part of working with others. One must accept this and learn to resolve conflict in the most prudent manner. Let me give you an experience of my own
+      </p>
+      <p>
+        It was part of a challenge for phase 0 at DBC. We were tasked with writing a method that took two parameters: an array of integers and strings, and a number. This method was to add the value of this number to each of the integers in the array. After pondering the challenge, I wrote the following.
+      </p>
+      <p>
+        <code>def my_array_modification_method!(arr, num)<br>
+          &nbsp arr.map! {|x| x.is_a?(Integer) ? x + num : x}<br>
+          end
+        </code>
+      </p>
+      <p>
+        <strong>"Beautiful!"</strong> I thought. Short and sweet. One line for one job. What a pretty solution! I was reaping the benefits of a high-level language–short but highly expressive code. But my euphoria was short-lived.
+      </p>
+      <p>
+        "It's not readable at all," said my partner. "I hate the ternary operator, it's so confusing... Why don't we just write it out as an if/elsif statement? It's longer but it's much clearer." I felt as if my sand castle was getting kicked over. It was heartbreaking to have my <em>art</em> get rejected. A debate ensued. I felt frustrated because my partner didn't appreciate my work. But that wasn't the heart of the conflict. After some introspection, I realized I was scared. My ideas about what constitutes "good code" was being challenged. I held brevity in very high regard. Was I wrong to strive for this? I thought my solution was still very readable. If we were going to get through this challenge, I needed to know if I was set down the wrong path. It was stressful to think that my very way of benchmarking code may need to be reevaluated.
+      </p>
+      <p>
+        We decided to take our dilemma to office hours to get the input of an experienced programmer. She explained that both are valid solutions. As new programmers, it's good to use the fundamentals like if/elsif statements. Indeed, shorter is not always better, like when it robs the code of its readability. But she when on to say that this was a very reasonable use of the ternary operator. The code was readable and desirably short. She recommended that we use the shorter version to submit for the refactored solution.
+      </p>
+      <p>
+        In this situation, it came down to a disagreement about the criteria of good code. Rather than arguing about this challenge and going in circles, it's better to try to identify the fundamental reason for the conflict, and find an unbiased way to resolve it. In this case, asking a professional was beneficial for both of us.
+      </p>
+    </section>
+  </div>
+</main>
 
-    <!-- Bootstrap core CSS -->
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="../js/ie-emulation-modes-warning.js"></script>
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-    <!-- Custom styles for this template -->
-    <link href="../css/carousel.css" rel="stylesheet">
-  </head>
-<!-- NAVBAR
-================================================== -->
-  <body>
-    <div class="navbar-wrapper">
-      <div class="container">
-
-        <nav class="navbar navbar-inverse navbar-static-top">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#">Derek Tang</a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li class="active"><a href="index.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                  <ul class="dropdown-menu" role="menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li class="divider"></li>
-                    <li class="dropdown-header">Nav header</li>
-                    <li><a href="#">Separated link</a></li>
-                    <li><a href="#">One more separated link</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-
-      </div>
-    </div>
-
-
-
-
-<div class="container marketing">
-
-
-
-      <!-- START THE FEATURETTES -->
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">What has been in the works lately? <span class="text-muted">It'll blow your mind.</span></h2>
-
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-        </div>
-      </div>
-
-      <p class="lead">This stuff is pretty amazing</p>
-<h1>Conflict</h1>
-    <p>We've all had experience with conflict and many times it has left us feeling angry or upset.  What if you could analyze the way you are feeling on a more detailed level?  This can be helpful to mediate negative feelings and resolve the conflict.  Ultimately, I can see this helping me be just a better person.</p>
-    <h2>An Example of Conflict I Experienced</h2>
-    <p>A time I had conflict was when I was employee.  A supervisor had asked me to perform a task and I felt agitated and upset because the supervisor did not know the process involved in completing the task.  The supervisor assumed it was a simple task that could be completed only in a relatively short time or without effort.</p>
-    <h2>My feelings</h2>
-    <p>I felt taken for granted in this case because the supervisor asked for my help but there was a disconnect between my knowledge of the process and how the supervisor understood what the task entailed.  Really the task should not have been dismissed as trivial.  There was no reason for the supervisor to feel this way because he in fact did not know what I had to do to complete the task.</p>
-    <h2>Actions Taken</h2>
-    <p>My first reaction was definitely feeling resentful.  I shut down communication and took myself away from interacting with the supervisor at first.  I then tried to make the supervisor understand what I had to do and argue about the complexity of the task.  I felt he was also getting upset because I was being critical of how he understood the task and process.  I felt like I could have been more calm and handled the situation differently.  His expression of anger could have been mediated by my calm reasoning.</p>
-    <h2>How to Mitigate the conflict</h2>
-    <p>I definitely feel if I had reasoned about the why the supervisor did not know the process and calmly explain the process to him I could have handled the situation differently. I would not be as agitated and the supervisor would not be displeased.  If he had expressed disagreement I would have had to just let him understand on another occasion or in a different way.  </p>
-
-    <p>  In this case there was a true disconnect  the supervisor did not have adequate input in the process and had little true knowledge of the process.  Because of this, there was truly difficulties in him understanding my situation, but really there is no reason to be upset about it, only to acknowledge that he may disagree that he doesn't know what the process and to move on.</p>
-
-      <!-- FOOTER -->
-      <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2015 Derek Tang &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-      </footer>
-
-    </div><!-- /.container -->
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
-    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
-    <script src="../js/holder.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../js/ie10-viewport-bug-workaround.js"></script>
-  </body>
-</html>

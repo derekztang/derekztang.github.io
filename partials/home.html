@@ -1,0 +1,32 @@
+<section id="hex">
+  <h1>Andrew Carlson. <span>Web Developer.</span></h1>
+</section>
+
+<div id="cover">
+  <section id="hello">
+    <h2>Welcome to Andrew's Website!</h2>
+    <article>
+      <h6 class="chevron" ng-click="home.tab = 0">
+        <div class='inline' ng-class="{rotate:home.tab === 0}">
+          <i class="fa fa-chevron-right"></i>
+        </div> Feb 20, 2015
+      </h6>
+      <p ng-show="home.tab === 0" class="hide">Welcome web traveller! You've found my "ground zero" for the web technologies I fool around with. So far it's made of just HTML/CSS. It'll grow as I do throughout my dalliances with languages and frameworks. If you'd like to know more about me, have a look around!</p>
+    </article>
+    <article>
+      <h6 class="chevron" ng-click="home.tab = 1">
+        <div class='inline' ng-class="{rotate:home.tab === 1}">
+          <i class="fa fa-chevron-right"></i>
+        </div> Feb 26, 2015
+      </h6>
+      <p ng-show="home.tab === 1" class="hide">I've added responsive design! In order to make it look nice on all screens, I've utilized media query in my CSS. It now reacts to the width of the page. You can resize the browser window to see what it'll look like. Check out what the nav bar does when squeezed under 500px!</p>
+    </article>
+    <article>
+      <h6 class="chevron" ng-click="home.tab = 2">
+        <div class='inline' ng-class="{rotate:home.tab === 2}">
+          <i class="fa fa-chevron-right"></i>
+        </div> Mar 19, 2015</h6>
+      <p ng-show="home.tab === 2" class="hide">I've given the site a JavaScript makeover! It now has responsive elements, like the menu button on the nav bar when the width is 500px or less. I've also organized the content using AngularJS complete with controllers and UI states.</p>
+    </article>
+  </section>
+</div>
